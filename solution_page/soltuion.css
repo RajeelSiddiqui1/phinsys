@@ -1,0 +1,369 @@
+
+body {
+    position: relative;
+    background:#469BC3;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0) 50%,  
+        rgba(0, 0, 0, 0.6) 100%      
+    );
+    z-index: 1;
+}
+
+body * {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+/* navbar */
+        .navbar-custom {
+            background-color: #172937;
+            padding: 10px 0;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: #00a2ff;
+            font-weight: bold;
+            font-family: din-2014, sans-serif;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-custom .navbar-nav .thin-pipe {
+            display: inline-block;
+            width: 1px;         
+            height: 45px;      
+            background-color: #00BEFF; 
+            vertical-align: middle;
+        } 
+        
+        .navbar-custom .navbar-nav .thin-pipe2 {
+            display: inline-block;
+            width: 1px;         
+            height: 30px;      
+            background-color: #00BEFF; 
+            vertical-align: middle;
+        }     
+
+        .navbar-custom .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: rgb(255, 255, 255);
+            font-family:
+            "Verlag A", "Verlag B", sans-serif;
+            font-weight: 550;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 16px;
+            padding: 20px 15px;
+            text-transform: uppercase;
+        }
+
+       
+        .navbar-custom .navbar-nav .nav-item + .nav-item {
+            margin-left: 20px;
+        }
+
+        .navbar-custom .navbar-nav .nav-link::after {
+            content: "";
+            display: block;
+            margin: auto;
+            height: 2px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease, background-color .5s ease;
+        }
+
+        .navbar-custom .navbar-nav .nav-link:hover::after {
+            width: 100%;
+            background: #00a2ff;
+        }
+
+        .navbar-toggler {
+            background-color: #ffffff; 
+            border: none; 
+            border-radius: 10%;
+        }
+
+        .navbar-toggler-icon {
+            background-image: none; 
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none; 
+        }
+
+        .navbar-toggler .fa-bars {
+            color: #172937; 
+        }
+
+       /* navbar */
+       
+
+       body {
+        position: relative;
+        background:#469BC3;
+    }
+    
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+            circle at center,
+            rgba(255, 255, 255, 0) 50%,  
+            rgba(0, 0, 0, 0.6) 100%      
+        );
+        z-index: 1;
+    }
+    
+    body * {
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+    
+    
+    /* navbar */
+            .navbar-custom {
+                background-color: #172937;
+                padding: 10px 0;
+            }
+    
+            .navbar-custom .navbar-brand {
+                color: #00a2ff;
+                font-weight: bold;
+                font-family: din-2014, sans-serif;
+                display: flex;
+                align-items: center;
+            }
+    
+            .navbar-custom .navbar-nav .thin-pipe {
+                display: inline-block;
+                width: 1px;         
+                height: 45px;      
+                background-color: #00BEFF; 
+                vertical-align: middle;
+            } 
+            
+            .navbar-custom .navbar-nav .thin-pipe2 {
+                display: inline-block;
+                width: 1px;         
+                height: 30px;      
+                background-color: #00BEFF; 
+                vertical-align: middle;
+            }     
+    
+            .navbar-custom .navbar-brand img {
+                height: 40px;
+                margin-right: 10px;
+            }
+    
+            .navbar-custom .navbar-nav .nav-link {
+                color: rgb(255, 255, 255);
+                font-family:
+                "Verlag A", "Verlag B", sans-serif;
+                font-weight: 550;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 16px;
+                padding: 20px 15px;
+                text-transform: uppercase;
+            }
+    
+           
+            .navbar-custom .navbar-nav .nav-item + .nav-item {
+                margin-left: 20px;
+            }
+    
+            .navbar-custom .navbar-nav .nav-link::after {
+                content: "";
+                display: block;
+                margin: auto;
+                height: 2px;
+                width: 0px;
+                background: transparent;
+                transition: width .5s ease, background-color .5s ease;
+            }
+    
+            .navbar-custom .navbar-nav .nav-link:hover::after {
+                width: 100%;
+                background: #00a2ff;
+            }
+    
+            .navbar-toggler {
+                background-color: #ffffff; 
+                border: none; 
+                border-radius: 10%;
+            }
+    
+            .navbar-toggler-icon {
+                background-image: none; 
+            }
+    
+            .navbar-toggler:focus {
+                box-shadow: none; 
+            }
+    
+            .navbar-toggler .fa-bars {
+                color: #172937; 
+            }
+    
+           /* navbar */
+           
+            /* main */
+        
+            .dotted-line-container {
+                display: flex;
+                align-items: center;
+            }
+        
+            .dotted-line {
+                border-bottom: 1px dotted white;
+                flex: 1;
+            }
+        
+            .text {
+                padding: 0 10px;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        
+            .main-heading h2{
+                font-size: 47px;
+                line-height: 47px;
+                font-style: normal;
+                color: 
+                rgb(255, 255, 255);
+                font-weight: 700;
+                font-family: "Verlag A", "Verlag B", sans-serif;
+            }        
+            
+            
+            .main-desc p{
+                font-size: 15px;
+                line-height: 22px;
+                font-style: normal;
+                color: 
+                rgb(255, 255, 255);
+                font-weight: 300;
+                font-family: "Verlag A", "Verlag B", sans-serif;
+                letter-spacing: 1px;
+            } 
+        
+        
+            .glass-container {
+                position: relative;
+                width: 100%;
+                height: 10%; /* Set height to 0 to use padding for aspect ratio */
+                padding-bottom: 100%; /* 1:1 aspect ratio */
+                overflow: hidden;
+                background: rgba(255, 255, 255, 0.1); /* Default glass effect */
+                backdrop-filter: blur(10px); /* Frosted glass effect */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagon shape */
+                transition: background 0.3s ease; /* Smooth transition for hover effect */
+            }
+            
+            .container {
+                padding: 0;
+            }
+            
+            .row {
+                margin: 0;
+            }
+            
+            .glass-container {
+                position: relative;
+                width: 100%;
+                padding-bottom: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                transition: background 0.3s ease, transform 0.3s ease;
+            }
+            
+            .image-wrapper {
+                position: absolute;
+                top: 53%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                height: 100%;
+                overflow: hidden;
+                z-index: 1;
+            }
+        
+            .image-wrapper2 {
+                position: absolute;
+                top: 48%;
+                left: 45%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                height: 100%;
+                overflow: hidden;
+                z-index: 1;
+            }
+            
+            
+            .glass-container img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            
+            .glass-container:hover {
+                backdrop-filter: none;
+            }
+            
+            .glass-1:hover {
+            
+                transform: scale(1.1);
+            }
+            
+            .glass-2:hover {
+            
+                transform: scale(1.1);
+            }
+            
+            .glass-3:hover {
+            
+                transform: scale(1.1);
+            }
+            
+            .glass-4:hover {
+            
+                transform: scale(1.1);
+            }
+            
+            .glass-5:hover {
+            
+                transform: scale(1.1);
+            }
+            
+            .glass-6:hover {
+            
+                transform: scale(1.1);
+            }
+        

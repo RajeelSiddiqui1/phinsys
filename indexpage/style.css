@@ -1,10 +1,9 @@
 
 body {
     position: relative;
-    margin: 0;
-    height: 150vh;
-    background: url('./Untitled\ design\ \(2\).jpg') no-repeat  ;
+    background: url('../images/Untitled\ design\ \(2\).jpg') no-repeat  ;
     background-size: cover;
+    /* height: 225vh; */
 }
 
 body::before {
@@ -16,7 +15,7 @@ body::before {
     height: 100%;
     background: radial-gradient(
         circle at center,
-        rgba(255, 255, 255, 0) 85%,  
+        rgba(255, 255, 255, 0) 50%,  
         rgba(0, 0, 0, 0.6) 100%      
     );
     z-index: 1;
@@ -27,6 +26,10 @@ body * {
     z-index: 2;
 }
 
+
+
+
+/* navbar */
         .navbar-custom {
             background-color: #172937;
             padding: 10px 0;
@@ -40,18 +43,20 @@ body * {
             align-items: center;
         }
 
-        .navbar-custom .navbar-nav .icon-separator {
-            transform: rotate(90deg);
-            font-size: 50px;
-            font-weight: 600;
-            color: #00BEFF;
-        }   
+        .navbar-custom .navbar-nav .thin-pipe {
+            display: inline-block;
+            width: 1px;         
+            height: 45px;      
+            background-color: #00BEFF; 
+            vertical-align: middle;
+        } 
         
-        .navbar-custom .navbar-nav .icon-separator2 {
-            transform: rotate(90deg);
-            font-size: 30px;
-            /* font-weight: 600; */
-            color: #00BEFF;
+        .navbar-custom .navbar-nav .thin-pipe2 {
+            display: inline-block;
+            width: 1px;         
+            height: 30px;      
+            background-color: #00BEFF; 
+            vertical-align: middle;
         }     
 
         .navbar-custom .navbar-brand img {
@@ -63,8 +68,9 @@ body * {
             color: rgb(255, 255, 255);
             font-family:
             "Verlag A", "Verlag B", sans-serif;
-            font-weight: 500;
-            font-size: 14px;
+            font-weight: 550;
+            font-size: 12px;
+            letter-spacing: 1px;
             line-height: 16px;
             padding: 20px 15px;
             text-transform: uppercase;
@@ -90,6 +96,27 @@ body * {
             background: #00a2ff;
         }
 
+        .navbar-toggler {
+            background-color: #ffffff; 
+            border: none; 
+            border-radius: 10%;
+        }
+
+        .navbar-toggler-icon {
+            background-image: none; 
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none; 
+        }
+
+        .navbar-toggler .fa-bars {
+            color: #172937; 
+        }
+
+       /* navbar */
+       
+       /* main */
         .im {
             position: relative;
             width: 100%;
@@ -163,7 +190,7 @@ writing-mode: horizontal-tb;
 
 .custom-button span {
     display: inline-block;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .custom-button i {
@@ -186,3 +213,65 @@ writing-mode: horizontal-tb;
     pointer-events: none;
 }
   
+/* main */
+
+/* about */
+
+.about h6{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: "Verlag A", "Verlag B", sans-serif;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.about h6 span{
+    font-weight: 400;
+}
+
+.about2 h6{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: "Verlag A", "Verlag B", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.custom-button2 {
+    padding: 5px;
+    color: #FFFFFF; 
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-style: dotted;
+    writing-mode: horizontal-tb;
+    cursor: pointer;
+}
+
+.custom-button2 span {
+    display: inline-block;
+    /* margin-right: 10px; */ /* Optional, remove if unnecessary */
+}
+
+.custom-button2 i {
+    transition: transform 0.3s ease;
+}
+
+.custom-button2:hover i {
+    transform: translateX(5px); /* Moves icon to the right on hover */
+}
+
+.custom-button2::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    pointer-events: none;
+}
